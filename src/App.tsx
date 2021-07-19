@@ -1,7 +1,14 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import BottomAppBar from '~/components/BottomAppBar';
+import  SignUp  from '@pages/SignUp';
+import Container from '@material-ui/core/Container';
 
 function App() {
-  return <Button color="primary">Hello World</Button>;
+  return (
+    <Container maxWidth="lg">
+      <SignUp />
+      <BottomAppBar />
+    </Container>
+  )
 }
 export default App;
