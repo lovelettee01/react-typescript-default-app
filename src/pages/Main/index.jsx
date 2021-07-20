@@ -12,7 +12,7 @@ const Main = (props) => {
 
   /* Renderer */
   return (
-    <Container component="main" maxWidth="gl">
+    <Container component="main" maxWidth="lg">
       <CssBaseline />
       <div className={className}>Main Page</div>
     </Container>
@@ -21,7 +21,7 @@ const Main = (props) => {
 
 /* Main Component Settings */
 Main.propTypes = {
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 /* Exports */

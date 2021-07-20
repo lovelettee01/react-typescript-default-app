@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import RouteWithLayout from '@routes/RouteWithLayout';
 import { MainTemplate, ErrorTemplate } from '~/layouts';
-import { Main, SignUp, NotFound } from '~/pages';
+import { Main, SignUp, SignInSide, NotFound } from '~/pages';
 
 const MainRotute = () => (
   <Router>
@@ -11,6 +11,18 @@ const MainRotute = () => (
         exact
         layout={(props) => <MainTemplate {...props} sectionId="Main" />}
         component={Main}
+      />
+      <RouteWithLayout
+        path="/Board"
+        exact
+        layout={(props) => <MainTemplate {...props} sectionId="Main" />}
+        component={Main}
+      />
+      <RouteWithLayout
+        path="/SignIn"
+        exact
+        layout={(props) => <MainTemplate {...props} sectionId="Main" />}
+        component={SignInSide}
       />
       <RouteWithLayout
         path="/SignUp"

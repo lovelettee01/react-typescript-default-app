@@ -1,13 +1,6 @@
+/* src/App.jsx */
 import React from "react";
-import { Header, Footer } from "~/layouts";
-import FlexLayoutGrid from "./components/FlexLayoutGrid";
-function App() {
-  return (
-    <React.Fragment>
-      <Header />
-      <FlexLayoutGrid />
-      <Footer />
-    </React.Fragment>
-  );
-}
+import MainRotute from "~/routes";
+
+const App = () => <MainRotute />;
 export default App;

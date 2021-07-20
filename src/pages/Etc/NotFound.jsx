@@ -12,7 +12,7 @@ const NotFound = (props) => {
 
   /* Renderer */
   return (
-    <Container maxWidth="gl">
+    <Container maxWidth="lg">
       <CssBaseline />
       <div className={className}>NotFound Page</div>
     </Container>
@@ -21,7 +21,7 @@ const NotFound = (props) => {
 
 /* NotFound Component Settings */
 NotFound.propTypes = {
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 /* Exports */

@@ -2,20 +2,21 @@
 
 /* React */
 import React from 'react';
-import BottomAppBar from '@components/BottomAppBar';
 import Container from '@material-ui/core/Container';
 
 import PropTypes from 'prop-types';
+import { Header, Footer } from '~/layouts';
 
 const MainTemplate = (props) => {
   /* Props */
-  const { className, children } = props;
+  const { children, ...rest } = props;
 
   /* Renderer */
   return (
-    <Container className={className} maxWidth="lg">
+    <Container maxWidth="lg" style={{ height: '100%', padding: '0px' }}>
+      <Header />
       {children}
-      <BottomAppBar {...props} />
+      <Footer {...rest} />
     </Container>
   );
 };
@@ -23,7 +24,7 @@ const MainTemplate = (props) => {
 /* Main Component Settings */
 MainTemplate.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 /* Exports */
