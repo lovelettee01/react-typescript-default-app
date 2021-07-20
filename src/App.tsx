@@ -1,14 +1,13 @@
-import React from 'react';
-import BottomAppBar from '~/components/BottomAppBar';
-import  SignUp  from '@pages/SignUp';
-import Container from '@material-ui/core/Container';
-
+import React from "react";
+import { Header, Footer } from "~/layouts";
+import FlexLayoutGrid from "./components/FlexLayoutGrid";
 function App() {
   return (
-    <Container maxWidth="lg">
-      <SignUp />
-      <BottomAppBar />
-    </Container>
-  )
+    <React.Fragment>
+      <Header />
+      <FlexLayoutGrid />
+      <Footer />
+    </React.Fragment>
+  );
 }
 export default App;
