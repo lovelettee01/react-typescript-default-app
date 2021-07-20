@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     margin: '0 auto',
   },
 }));
-const BottomAppBar = () => {
+const BottomAppBar = (prpos) => {
   const classes = useStyles();
 
   return (
@@ -41,7 +41,7 @@ const BottomAppBar = () => {
           <Fab color="secondary" aria-label="add" className={classes.fabButton}>
             <AddIcon />
           </Fab>
-          <LabelBottomNavigation />
+          <LabelBottomNavigation {...prpos} />
           <div className={classes.grow} />
           <IconButton color="inherit">
             <SearchIcon />
@@ -53,5 +53,5 @@ const BottomAppBar = () => {
       </AppBar>
     </React.Fragment>
   );
-}
+};
 export default BottomAppBar;
