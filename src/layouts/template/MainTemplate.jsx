@@ -14,7 +14,7 @@ const MainTemplate = (props) => {
   /* Renderer */
   return (
     <Container maxWidth="lg" style={{ height: '100%', padding: '0px' }}>
-      <Header />
+      <Header {...rest} />
       {children}
       <Footer {...rest} />
     </Container>

@@ -16,7 +16,6 @@ const LabelBottomNavigation = (props) => {
   const classes = useStyles();
   const [value, setValue] = React.useState(props.match.path);
 
-  console.log(props);
   const handleChange = (e, val) => {
     setValue(val);
     props.history.push(val);
